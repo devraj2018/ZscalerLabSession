@@ -4,6 +4,7 @@ import javax.persistence.*;
 
 @Entity
 public class Customers {
+	
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;

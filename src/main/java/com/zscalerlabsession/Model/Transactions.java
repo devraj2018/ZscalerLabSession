@@ -2,6 +2,7 @@ package com.zscalerlabsession.Model;
 import javax.persistence.*;
 import java.sql.Date;
 
+@Entity
 public class Transactions {
 
     @Id

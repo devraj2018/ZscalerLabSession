@@ -64,13 +64,9 @@ public class AccountDetail {
 	}
 
 	 
-
-
 	@Override
 	public String toString() {
 		return "AccountDetail [account_number=" + accountNumber + ", Balance=" + balance + ", AccountType=" + type +  "]";
 	}
-	
-	
 
 }
