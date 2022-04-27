@@ -1,4 +1,4 @@
-package com.zscalerlabsession.models;
+package com.zscalerlabsession.Model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
