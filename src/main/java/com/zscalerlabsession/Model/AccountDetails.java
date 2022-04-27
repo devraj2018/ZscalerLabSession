@@ -1,4 +1,4 @@
-package com.zscalerlabsession.models;
+package com.zscalerlabsession.Model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -10,6 +10,7 @@ public class AccountDetail {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private long id;
 	
 	private long accountNumber;
 	private double balance;
@@ -22,13 +23,18 @@ public class AccountDetail {
 	}
 
 
-	public AccountDetail(long accountNumber, double balance, String type) {
+	public AccountDetail(long id,long accountNumber, double balance, String type) {
 		super();
+		this.id=id;
 		this.accountNumber = accountNumber;
 		this.balance = balance;
 		this.type = type;
 		 
 	}
+
+	public long getId() {
+        return id;
+    }
 
 	public long getAccountNumber() {
 		return accountNumber;
