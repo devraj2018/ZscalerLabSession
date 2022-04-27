@@ -6,16 +6,16 @@ import javax.persistence.*;
 public class Customers {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private long id;
 
-    String name;
-    long accountNumber;
-    String ifscCode;
-    String phoneNumber;
-    String address;
-    String branchName;
-    String emailId;
-    String password;
+    private String name;
+    private long accountNumber;
+    private String ifscCode;
+    private String phoneNumber;
+    private String address;
+    private String branchName;
+    private String emailId;
+    private String password;
 
     public Customers() {
         super();
@@ -104,5 +104,12 @@ public class Customers {
     public String getIfscCode(){
         return ifscCode;
     }
+
+	@Override
+	public String toString() {
+		return "Customers [id=" + id + ", name=" + name + ", accountNumber=" + accountNumber + ", ifscCode=" + ifscCode
+				+ ", phoneNumber=" + phoneNumber + ", address=" + address + ", branchName=" + branchName + ", emailId="
+				+ emailId + ", password=" + password + "]";
+	}
 
 }
