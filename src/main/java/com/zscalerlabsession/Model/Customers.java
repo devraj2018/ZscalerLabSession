@@ -8,14 +8,14 @@ public class Customers {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    String name;
-    long accountNumber;
-    String ifscCode;
-    String phoneNumber;
-    String address;
-    String branchName;
-    String emailId;
-    String password;
+    private String name;
+    private long accountNumber;
+    private String ifscCode;
+    private String phoneNumber;
+    private String address;
+    private String branchName;
+    private String emailId;
+    private String password;
 
     public Customers() {
         super();
