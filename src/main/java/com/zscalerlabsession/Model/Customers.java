@@ -6,7 +6,7 @@ import javax.persistence.*;
 public class Customers {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private long id;
 
     private String name;
     private long accountNumber;
@@ -104,5 +104,12 @@ public class Customers {
     public String getIfscCode(){
         return ifscCode;
     }
+
+	@Override
+	public String toString() {
+		return "Customers [id=" + id + ", name=" + name + ", accountNumber=" + accountNumber + ", ifscCode=" + ifscCode
+				+ ", phoneNumber=" + phoneNumber + ", address=" + address + ", branchName=" + branchName + ", emailId="
+				+ emailId + ", password=" + password + "]";
+	}
 
 }
