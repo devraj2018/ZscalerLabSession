@@ -9,9 +9,9 @@ public class Transactions {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    private String sender;
-    private String receiver;
-    private int amount;
+    private long sender;
+    private long receiver;
+    private double amount;
     private String status;
     private Date date;
 
@@ -23,27 +23,27 @@ public class Transactions {
         this.id = id;
     }
 
-    public String getSender() {
+    public long getSender() {
         return sender;
     }
 
-    public void setSender(String sender) {
+    public void setSender(long sender) {
         this.sender = sender;
     }
 
-    public String getReceiver() {
+    public long getReceiver() {
         return receiver;
     }
 
-    public void setReceiver(String receiver) {
+    public void setReceiver(long receiver) {
         this.receiver = receiver;
     }
 
-    public int getAmount() {
+    public double getAmount() {
         return amount;
     }
 
-    public void setAmount(int amount) {
+    public void setAmount(double amount) {
         this.amount = amount;
     }
 
@@ -67,7 +67,7 @@ public class Transactions {
         super();
     }
 
-    public Transactions(long id, String sender, String receiver, int amount, String status, Date date) {
+    public Transactions(long id, long sender, long receiver, int amount, String status, Date date) {
         this.id = id;
         this.sender = sender;
         this.receiver = receiver;
