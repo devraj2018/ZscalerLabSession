@@ -1,7 +1,6 @@
 package com.zscalerlabsession.zscalerlabsession.Response;
 
-import com.zscalerlabsession.zscalerlabsession.Model.Accounts;
-import org.apache.catalina.connector.Response;
+import com.zscalerlabsession.zscalerlabsession.Model.Account;
 
 import java.util.Date;
 
@@ -10,13 +9,13 @@ public class AccountResponse{
     private Date timeStamp;
     private String message;
     private String status;
-    private Accounts account;
+    private Account account;
 
     public AccountResponse() {
         super();
     }
 
-    public AccountResponse(Date timeStamp, String message, String status, Accounts account) {
+    public AccountResponse(Date timeStamp, String message, String status, Account account) {
         this.timeStamp = timeStamp;
         this.message = message;
         this.status = status;
@@ -47,11 +46,11 @@ public class AccountResponse{
         this.status = status;
     }
 
-    public Accounts getAccount() {
+    public Account getAccount() {
         return account;
     }
 
-    public void setAccount(Accounts account) {
+    public void setAccount(Account account) {
         this.account = account;
     }
 }

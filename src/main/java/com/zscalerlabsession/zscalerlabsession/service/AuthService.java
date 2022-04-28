@@ -1,10 +1,10 @@
 package com.zscalerlabsession.zscalerlabsession.service;
 
-import com.zscalerlabsession.zscalerlabsession.Model.Customers;
+import com.zscalerlabsession.zscalerlabsession.Model.Customer;
 
 public interface AuthService
 {
-    Customers createCustomer(Customers customerDetails);
+    Customer createCustomer(Customer customerDetails);
 
-    Customers fetchCustomerByEmail(String emailId);
+    Customer fetchCustomerByEmail(String emailId);
 }

@@ -1,7 +1,6 @@
 package com.zscalerlabsession.zscalerlabsession.controllers;
 
-import com.zscalerlabsession.zscalerlabsession.Model.Accounts;
-import com.zscalerlabsession.zscalerlabsession.Model.Customers;
+import com.zscalerlabsession.zscalerlabsession.Model.Account;
 import com.zscalerlabsession.zscalerlabsession.Repository.AccountRepository;
 import com.zscalerlabsession.zscalerlabsession.Response.AccountResponse;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,15 +17,15 @@ import java.util.Date;
 @RequestMapping("/accounts")
 public class AccountController {
     @Autowired
-    Accounts account;
+    Account account;
 
     @Autowired
     AccountRepository accountRepository;
 
     @PostMapping("/create")
-    public ResponseEntity<Object> createCAccount(@RequestBody Accounts account){
+    public ResponseEntity<Object> createCAccount(@RequestBody Account account){
         long num = accountRepository.count();
-        Accounts savedAccount = accountRepository.save(account);
+        Account savedAccount = accountRepository.save(account);
 
         long newNum = accountRepository.count();
         String status = "";

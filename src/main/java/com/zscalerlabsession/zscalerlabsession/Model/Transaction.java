@@ -3,7 +3,7 @@ import javax.persistence.*;
 import java.sql.Date;
 
 @Entity
-public class Transactions {
+public class Transaction {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -63,11 +63,11 @@ public class Transactions {
         this.date = date;
     }
 
-    public Transactions() {
+    public Transaction() {
         super();
     }
 
-    public Transactions(long id, long sender, long receiver, int amount, String status, Date date) {
+    public Transaction(long id, long sender, long receiver, int amount, String status, Date date) {
         this.id = id;
         this.sender = sender;
         this.receiver = receiver;

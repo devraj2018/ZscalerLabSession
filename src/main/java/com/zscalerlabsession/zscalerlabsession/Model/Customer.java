@@ -3,7 +3,7 @@ package com.zscalerlabsession.zscalerlabsession.Model;
 import javax.persistence.*;
 
 @Entity
-public class Customers {
+public class Customer {
 	
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,11 +18,11 @@ public class Customers {
     private String emailId;
     private String password;
 
-    public Customers() {
+    public Customer() {
         super();
     }
 
-    public Customers(Long id, String name, long accountNumber, String ifscCode, String phoneNumber, String address, String branchName, String emailId, String password) {
+    public Customer(Long id, String name, long accountNumber, String ifscCode, String phoneNumber, String address, String branchName, String emailId, String password) {
         this.id = id;
         this.name = name;
         this.accountNumber = accountNumber;

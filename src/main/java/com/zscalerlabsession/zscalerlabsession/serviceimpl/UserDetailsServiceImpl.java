@@ -1,6 +1,6 @@
 package com.zscalerlabsession.zscalerlabsession.serviceimpl;
 
-import com.zscalerlabsession.zscalerlabsession.Model.Customers;
+import com.zscalerlabsession.zscalerlabsession.Model.Customer;
 import com.zscalerlabsession.zscalerlabsession.Repository.CustomerRepository;
 import com.zscalerlabsession.zscalerlabsession.security.UserDetailsImpl;
 
@@ -19,7 +19,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     @Override
     public UserDetails loadUserByUsername(String emailId)throws UsernameNotFoundException
     {
-        Customers customer = customerRepository.fetchCustomerByEmail(emailId);
+        Customer customer = customerRepository.fetchCustomerByEmail(emailId);
         if(customer == null)
         {
             throw new UsernameNotFoundException("Customer with this email not found");

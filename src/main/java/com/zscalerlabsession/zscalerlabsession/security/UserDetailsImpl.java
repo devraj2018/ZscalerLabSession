@@ -5,7 +5,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import com.zscalerlabsession.zscalerlabsession.Model.Customers;
+import com.zscalerlabsession.zscalerlabsession.Model.Customer;
 
 import java.util.Collection;
 
@@ -134,7 +134,7 @@ public class UserDetailsImpl implements UserDetails
     private String branchName;
     private String emailId;
 
-    public static UserDetailsImpl build(Customers customer)
+    public static UserDetailsImpl build(Customer customer)
     {
         return new UserDetailsImpl(customer.getName(),customer.getPassword(),customer.getAccountNumber(),customer.getIfscCode(),
                 customer.getAddress(),customer.getBranchName(),customer.getEmailId());

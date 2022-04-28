@@ -1,6 +1,6 @@
 package com.zscalerlabsession.zscalerlabsession.serviceimpl;
 
-import com.zscalerlabsession.zscalerlabsession.Model.Customers;
+import com.zscalerlabsession.zscalerlabsession.Model.Customer;
 import com.zscalerlabsession.zscalerlabsession.Repository.CustomerRepository;
 import com.zscalerlabsession.zscalerlabsession.service.AuthService;
 
@@ -15,7 +15,7 @@ public class AuthServiceImpl implements AuthService {
     PasswordEncoder encoder;
 
     @Override
-    public Customers createCustomer(Customers customerDetails) {
+    public Customer createCustomer(Customer customerDetails) {
         // TODO Auto-generated method stub
 
         customerDetails.setPassword(encoder.encode(customerDetails.getPassword()));
@@ -24,7 +24,7 @@ public class AuthServiceImpl implements AuthService {
     }
 
     @Override
-    public Customers fetchCustomerByEmail(String emailId) {
+    public Customer fetchCustomerByEmail(String emailId) {
         // TODO Auto-generated method stub
         return customerRepository.fetchCustomerByEmail(emailId);
     }

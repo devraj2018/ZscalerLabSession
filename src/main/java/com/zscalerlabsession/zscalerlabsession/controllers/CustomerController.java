@@ -1,7 +1,7 @@
 package com.zscalerlabsession.zscalerlabsession.controllers;
 
 
-import com.zscalerlabsession.zscalerlabsession.Model.Customers;
+import com.zscalerlabsession.zscalerlabsession.Model.Customer;
 import com.zscalerlabsession.zscalerlabsession.security.JwtUtils;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,12 +27,12 @@ public class CustomerController
     }
 
     @PostMapping("/createCustomer")
-	public ResponseEntity<Object> createCustomer(@RequestBody Customers Customers){
+	public ResponseEntity<Object> createCustomer(@RequestBody Customer customer){
 		
-		Customers fetchAdmin = authSerivce.fetchAdminByEmail(Customers.getEmailId());
+		Customer fetchAdmin = authSerivce.fetchAdminByEmail(customer.getEmailId());
 		
 		if(fetchCustomer == null) {
-			Customers admin = authSerivce.createCustomer(Customers);
+			Customer admin = authSerivce.createCustomer(customer);
 			
 			CustomersResponse response = new CustomersResponse(new Date(),"Customer Created Succesfully","200",admin);
 			
