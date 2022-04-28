@@ -23,21 +23,21 @@ public class LoginController {
     @Autowired
     PasswordEncoder encoder;
 
-
-    @PostMapping("/login")
-    public ResponseEntity<Object> login(@RequestBody Customer customer)
-    {
-        Customer fetchCustomer = authService.fetchCustomerByEmail(customer.getEmailId());
-
-        if(fetchCustomer!=null)
-        {
-            if(encoder.matches(customer.getPassword(), fetchCustomer.getPassword()))
-            {
-
-            }
-        }
-        return null;
-    }
+//
+//    @PostMapping("/login")
+//    public ResponseEntity<Object> login(@RequestBody Customer customer)
+//    {
+//        Customer fetchCustomer = authService.fetchCustomerByEmail(customer.getEmailId());
+//
+//        if(fetchCustomer!=null)
+//        {
+//            if(encoder.matches(customer.getPassword(), fetchCustomer.getPassword()))
+//            {
+//
+//            }
+//        }
+//        return null;
+//    }
 
 
 }

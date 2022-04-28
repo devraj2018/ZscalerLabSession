@@ -16,8 +16,6 @@ import java.util.Date;
 @RestController
 @RequestMapping("/accounts")
 public class AccountController {
-    @Autowired
-    Account account;
 
     @Autowired
     AccountRepository accountRepository;

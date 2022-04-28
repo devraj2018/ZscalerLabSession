@@ -1,6 +1,8 @@
 package com.zscalerlabsession.zscalerlabsession.service;
 
 import com.zscalerlabsession.zscalerlabsession.Model.Customer;
+import org.springframework.stereotype.Service;
+
 
 public interface AuthService
 {
