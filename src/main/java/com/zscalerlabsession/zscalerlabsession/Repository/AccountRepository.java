@@ -9,6 +9,6 @@ import com.zscalerlabsession.zscalerlabsession.Model.Account;
 @Repository
 public interface AccountRepository extends JpaRepository<Account, Long> {
 
-//    @Query("select * from Account")
+    @Query("select count(*) from Account")
     long count();
 }

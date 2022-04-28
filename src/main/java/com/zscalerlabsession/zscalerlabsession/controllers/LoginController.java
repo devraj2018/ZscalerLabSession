@@ -58,6 +58,7 @@ public class LoginController {
                 UserDetailsImpl details =(UserDetailsImpl)authentication.getPrincipal();
                 if(details != null)
                 {
+                    System.out.println(customer.getPassword());
                     CustomResponseForLogin response = new CustomResponseForLogin(new Date(),"Login Successfull","200",jwt,customer.getName(),customer.getEmailId());
                     return new ResponseEntity<Object>(response, HttpStatus.OK);
                 }
