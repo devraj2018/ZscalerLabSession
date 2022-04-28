@@ -5,6 +5,7 @@ import com.zscalerlabsession.zscalerlabsession.Repository.CustomerRepository;
 import com.zscalerlabsession.zscalerlabsession.response.CustomResponseForLogin;
 import com.zscalerlabsession.zscalerlabsession.response.CustomResponseForNoUser;
 import com.zscalerlabsession.zscalerlabsession.security.JwtUtils;
+//import com.zscalerlabsession.zscalerlabsession.security.UserDetailsImpl;
 import com.zscalerlabsession.zscalerlabsession.security.UserDetailsImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.neo4j.Neo4jProperties;

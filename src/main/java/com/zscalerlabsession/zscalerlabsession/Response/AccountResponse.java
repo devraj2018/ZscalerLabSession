@@ -1,4 +1,4 @@
-package com.zscalerlabsession.zscalerlabsession.Response;
+package com.zscalerlabsession.zscalerlabsession.response;
 
 import com.zscalerlabsession.zscalerlabsession.Model.Account;
 
