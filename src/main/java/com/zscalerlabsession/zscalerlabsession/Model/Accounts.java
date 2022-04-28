@@ -6,7 +6,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class AccountDetail {
+public class Accounts {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -50,12 +50,12 @@ public class AccountDetail {
 		return "AccountDetail [account_number=" + accountNumber + ", Balance=" + balance + ", AccountType=" + type +  "]";
 	}
 
-	public AccountDetail() {
+	public Accounts() {
 		super();
 	}
 
 
-	public AccountDetail(long id,long accountNumber, double balance, String type) {
+	public Accounts(long id, long accountNumber, double balance, String type) {
 		super();
 		this.id=id;
 		this.accountNumber = accountNumber;

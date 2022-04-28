@@ -1,15 +1,17 @@
 package com.zscalerlabsession.zscalerlabsession.controllers;
 
 
+import com.zscalerlabsession.zscalerlabsession.Model.Customers;
 import com.zscalerlabsession.zscalerlabsession.security.JwtUtils;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
-public class CreateUserandLogin
+@RequestMapping("/customers")
+public class CustomerController
 {
    
 
@@ -25,14 +27,14 @@ public class CreateUserandLogin
     }
 
     @PostMapping("/createCustomer")
-	public ResponseEntity<Object> createCustomer(@RequestBody CustomerDetails customerDetails){
+	public ResponseEntity<Object> createCustomer(@RequestBody Customers Customers){
 		
-		CustomerDetails fetchAdmin = authSerivce.fetchAdminByEmail(customerDetails.getEmailId());
+		Customers fetchAdmin = authSerivce.fetchAdminByEmail(Customers.getEmailId());
 		
 		if(fetchCustomer == null) {
-			CustomerDetails admin = authSerivce.createCustomer(customerDetails);
+			Customers admin = authSerivce.createCustomer(Customers);
 			
-			CustomerDetailsResponse response = new CustomerDetailsResponse(new Date(),"Customer Created Succesfully","200",admin);
+			CustomersResponse response = new CustomersResponse(new Date(),"Customer Created Succesfully","200",admin);
 			
 			return new ResponseEntity<Object>(response,HttpStatus.OK);
 		}else {
