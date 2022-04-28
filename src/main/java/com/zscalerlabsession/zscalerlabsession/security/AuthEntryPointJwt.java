@@ -1,4 +1,4 @@
-package com.zscalerlabsession.security;
+package com.zscalerlabsession.zscalerlabsession.security;
 
 import org.springframework.stereotype.Component;
 import java.io.IOException;

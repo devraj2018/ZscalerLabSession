@@ -1,21 +1,17 @@
-package com.zscalerlabsession.controllers;
+package com.zscalerlabsession.zscalerlabsession.controllers;
 
-import com.zscalerlabsession.Model.AccountDetail;
-import com.zscalerlabsession.Model.Customers;
-import com.zscalerlabsession.security.JwtUtils;
+
+import com.zscalerlabsession.zscalerlabsession.security.JwtUtils;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@RestController
 public class CreateUserandLogin
 {
-    @Autowired
-    AccountDetail accountDetail;
-
-    @Autowired
-    Customers customers;
+   
 
     @Autowired
     AuthenticationManager authenticationManager;

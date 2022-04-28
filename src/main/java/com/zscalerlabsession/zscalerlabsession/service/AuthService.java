@@ -1,6 +1,6 @@
-package com.zscalerlabsession.service;
+package com.zscalerlabsession.zscalerlabsession.service;
 
-import com.zscalerlabsession.Model.Customers;
+import com.zscalerlabsession.zscalerlabsession.Model.Customers;
 
 public interface AuthService
 {

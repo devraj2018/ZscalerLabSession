@@ -1,8 +1,9 @@
-package com.zscalerlabsession.serviceimpl;
+package com.zscalerlabsession.zscalerlabsession.serviceimpl;
 
-import com.zscalerlabsession.Model.Customers;
-import com.zscalerlabsession.Repository.CustomerRepository;
-import com.zscalerlabsession.security.UserDetailsImpl;
+import com.zscalerlabsession.zscalerlabsession.Model.Customers;
+import com.zscalerlabsession.zscalerlabsession.Repository.CustomerRepository;
+import com.zscalerlabsession.zscalerlabsession.security.UserDetailsImpl;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

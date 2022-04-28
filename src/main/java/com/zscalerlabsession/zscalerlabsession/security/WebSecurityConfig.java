@@ -1,6 +1,5 @@
-package com.zscalerlabsession.security;
+package com.zscalerlabsession.zscalerlabsession.security;
 
-import com.zscalerlabsession.serviceimpl.UserDetailsServiceImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +16,8 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+
+import com.zscalerlabsession.zscalerlabsession.serviceimpl.UserDetailsServiceImpl;
 
 
 

@@ -1,10 +1,11 @@
-package com.zscalerlabsession.security;
+package com.zscalerlabsession.zscalerlabsession.security;
 
-import com.zscalerlabsession.Model.Customers;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
+
+import com.zscalerlabsession.zscalerlabsession.Model.Customers;
 
 import java.util.Collection;
 

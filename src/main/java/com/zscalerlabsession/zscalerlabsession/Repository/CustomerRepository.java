@@ -1,9 +1,10 @@
-package com.zscalerlabsession.Repository;
+package com.zscalerlabsession.zscalerlabsession.Repository;
 
-import com.zscalerlabsession.Model.Customers;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
+
+import com.zscalerlabsession.zscalerlabsession.Model.Customers;
 
 @Repository
 public interface CustomerRepository extends JpaRepository<Customers, Long> {

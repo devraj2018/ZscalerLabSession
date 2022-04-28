@@ -1,4 +1,4 @@
-package com.zscalerlabsession.Model;
+package com.zscalerlabsession.zscalerlabsession.Model;
 
 import javax.persistence.*;
 

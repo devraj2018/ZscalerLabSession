@@ -1,4 +1,4 @@
-package com.zscalerlabsession.security;
+package com.zscalerlabsession.zscalerlabsession.security;
 
 import java.util.Date;
 import org.slf4j.Logger;

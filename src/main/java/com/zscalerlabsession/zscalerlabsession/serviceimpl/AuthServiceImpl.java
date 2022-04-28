@@ -1,8 +1,9 @@
-package com.zscalerlabsession.serviceimpl;
+package com.zscalerlabsession.zscalerlabsession.serviceimpl;
 
-import com.zscalerlabsession.Model.Customers;
-import com.zscalerlabsession.Repository.CustomerRepository;
-import com.zscalerlabsession.service.AuthService;
+import com.zscalerlabsession.zscalerlabsession.Model.Customers;
+import com.zscalerlabsession.zscalerlabsession.Repository.CustomerRepository;
+import com.zscalerlabsession.zscalerlabsession.service.AuthService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
