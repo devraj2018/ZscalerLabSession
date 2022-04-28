@@ -1,4 +1,4 @@
-package com.zscalerlabsession.zscalerlabsession.Response;
+package com.zscalerlabsession.zscalerlabsession.response;
 
 import java.util.Date;
 

@@ -2,7 +2,8 @@ package com.zscalerlabsession.zscalerlabsession.controllers;
 
 import com.zscalerlabsession.zscalerlabsession.Model.Account;
 import com.zscalerlabsession.zscalerlabsession.Repository.AccountRepository;
-import com.zscalerlabsession.zscalerlabsession.Response.AccountResponse;
+import com.zscalerlabsession.zscalerlabsession.response.AccountResponse;
+import com.zscalerlabsession.zscalerlabsession.response.AccountResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
