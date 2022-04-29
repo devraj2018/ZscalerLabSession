@@ -59,7 +59,7 @@ public class LoginController {
                 if(details != null)
                 {
                     System.out.println(customer.getPassword());
-                    CustomResponseForLogin response = new CustomResponseForLogin(new Date(),"Login Successfull","200",jwt,customer.getName(),customer.getEmailId());
+                    CustomResponseForLogin response = new CustomResponseForLogin(new Date(),"Login Successfull","200",jwt, fetchCustomer.getName(),customer.getEmailId());
                     return new ResponseEntity<Object>(response, HttpStatus.OK);
                 }
                 else {
